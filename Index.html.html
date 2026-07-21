@@ -1,0 +1,1008 @@
+<html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Perpustakaan Potensi Utama</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icon -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8FAFC;
+
+    color:#1E293B;
+
+}
+
+/*=========================
+        NAVBAR
+==========================*/
+
+.navbar{
+
+    background:#fff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#1E40AF !important;
+
+}
+
+.navbar-brand img{
+    
+    width:55px;
+
+    margin-right:12px;
+
+}
+
+.nav-link{
+
+    color:#1E3A8A !important;
+
+    font-weight:500;
+
+    padding:10px 18px !important;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    background:#2563EB;
+
+    color:white !important;
+
+}
+
+.nav-link.active{
+
+    background:#2563EB;
+
+    color:white !important;
+
+}
+
+
+/*=========================
+        HERO
+==========================*/
+
+.hero{
+
+background:linear-gradient(
+135deg,
+#2563EB,
+#3B82F6,
+#93C5FD);
+
+padding:80px 0;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+font-weight:700;
+
+color:white;
+
+line-height:65px;
+
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+color:#FACC15;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+line-height:33px;
+
+text-align:justify;
+
+color:white;
+
+margin-bottom:35px;
+
+}
+
+.btn-primary-custom{
+
+background:white;
+
+color:#2563EB;
+
+padding:14px 32px;
+
+border-radius:50px;
+
+font-weight:600;
+
+text-decoration:none;
+
+display:inline-block;
+
+transition:.3s;
+
+}
+
+.btn-primary-custom:hover{
+
+background:#FACC15;
+
+color:black;
+
+}
+
+.btn-outline-custom{
+
+border:2px solid white;
+
+padding:14px 32px;
+
+margin-left:10px;
+
+border-radius:50px;
+
+font-weight:600;
+
+text-decoration:none;
+
+display:inline-block;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.btn-outline-custom:hover{
+
+background:white;
+
+color:#2563EB;
+
+}
+
+/*=========================
+      CAROUSEL
+==========================*/
+
+.carousel{
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 20px 35px rgba(0,0,0,.25);
+
+}
+
+.carousel img{
+
+height:360px;
+
+object-fit:cover;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+
+background-color:rgba(0,0,0,.4);
+
+padding:18px;
+
+border-radius:50%;
+
+}
+
+.carousel-indicators button{
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+}
+
+
+/*=========================
+        TITLE
+==========================*/
+
+.section-title{
+
+font-size:38px;
+
+font-weight:700;
+
+color:#1E40AF;
+
+text-align:center;
+
+margin-top:80px;
+
+margin-bottom:50px;
+
+}
+
+/*=========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+line-height:50px;
+
+}
+
+.hero p{
+
+text-align:center;
+
+}
+
+.carousel{
+
+margin-top:40px;
+
+}
+
+.btn-outline-custom{
+
+margin-left:0;
+
+margin-top:15px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!--=========================
+        NAVBAR
+==========================-->
+
+<nav class="navbar navbar-expand-lg sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+
+<img src="logoperpus.png">
+
+Perpustakaan Potensi Utama
+
+</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse justify-content-end"
+id="menu">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link active"
+href="Perpustakaan.html">
+Beranda
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="katalogbuku.html">
+Katalog Buku
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="peminjaman.html">
+Peminjaman
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="riwayat.html">
+Riwayat
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="faq.html">
+FAQ
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="kontak.html">
+Kontak
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+<!--=========================
+        HERO
+==========================-->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-5">
+
+<h1>
+
+Selamat Datang di
+
+<br>
+
+<span>Perpustakaan Potensi Utama</span>
+
+</h1>
+
+<p>
+
+Perpustakaan UPU merupakan layanan perpustakaan modern yang menyediakan berbagai koleksi buku digital, jurnal ilmiah, skripsi, dan referensi akademik. Website ini membantu mahasiswa dan dosen memperoleh informasi secara cepat, mudah, dan dapat diakses kapan saja.
+
+</p>
+
+</div>
+
+
+<div class="col-lg-7">
+
+<div id="carouselPerpus"
+class="carousel slide"
+data-bs-ride="carousel"
+data-bs-interval="3500">
+
+<div class="carousel-indicators">
+
+<button
+type="button"
+data-bs-target="#carouselPerpus"
+data-bs-slide-to="0"
+class="active"></button>
+
+<button
+type="button"
+data-bs-target="#carouselPerpus"
+data-bs-slide-to="1"></button>
+
+<button
+type="button"
+data-bs-target="#carouselPerpus"
+data-bs-slide-to="2"></button>
+
+</div>
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+
+<img src="BUKU1.jpeg"
+class="d-block w-100"
+alt="Perpustakaan">
+
+</div>
+
+<div class="carousel-item">
+
+<img src="BUKU2.jpeg"
+class="d-block w-100"
+alt="Perpustakaan">
+
+</div>
+
+<div class="carousel-item">
+
+<img src="BUKU5.jpeg"
+class="d-block w-100"
+alt="Perpustakaan">
+
+</div>
+
+</div>
+
+<button
+class="carousel-control-prev"
+type="button"
+data-bs-target="#carouselPerpus"
+data-bs-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button
+class="carousel-control-next"
+type="button"
+data-bs-target="#carouselPerpus"
+data-bs-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+        BUKU TERBARU
+========================= -->
+
+<section class="container py-5">
+
+<h2 class="section-title">
+Buku 
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="card book-card">
+
+<img src="book1.jpeg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Bank Syari'ah</h5>
+
+<p class="text-muted">
+Muhammad Syafii Antonio
+</p>
+
+<a href="detailbook1.html" class="btn btn-detail">
+Detail
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="card book-card">
+
+<img src="book2.jpeg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Sikap Manusia</h5>
+
+<p class="text-muted">
+Dr.Saifuddin Azwar.M.A
+</p>
+
+<a href="detailbook2.html" class="btn btn-detail">
+Detail
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="card book-card">
+
+<img src="book3.jpeg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">
+Robotics
+</h5>
+
+<p class="text-muted">
+SK SAHA
+</p>
+
+
+<a href="detailbook3.html" class="btn btn-detail">
+Detail
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="card book-card">
+
+<img src="book4.jpeg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">
+Implementasi Tanggung Jawab Kejaksaan Negeri dalam Pemberatasan Tindak Pidana Korupsi di Indonesia
+</h5>
+
+<p class="text-muted">
+Boby Daniel Simatupang
+</p>
+
+<a href="detailbook4.html" class="btn btn-detail">
+Detail
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<div class="text-center my-4">
+
+    <div class="spinner-border spinner-border-sm text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <p class="mt-2 text-muted">
+        Memuat statistik perpustakaan...
+    </p>
+
+</div>
+
+<!-- =========================
+        STATISTIK
+========================= -->
+
+<section class="container py-5">
+
+<h2 class="section-title">
+
+Statistik Perpustakaan
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="stat-card">
+
+<i class="bi bi-book-half"></i>
+
+<h2>1500+</h2>
+
+<p>Total Buku</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-card">
+
+<i class="bi bi-people-fill"></i>
+
+<h2>350+</h2>
+
+<p>Mahasiswa</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-card">
+
+<i class="bi bi-arrow-repeat"></i>
+
+<h2>800+</h2>
+
+<p>Peminjaman</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-card">
+
+<i class="bi bi-journal-richtext"></i>
+
+<h2>250+</h2>
+
+<p>Jurnal</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+      JAM OPERASIONAL
+========================= -->
+
+<section class="container py-5">
+
+<h2 class="section-title">
+
+Jam Operasional
+
+</h2>
+
+<div class="schedule-card">
+
+<table class="table table-hover m-0">
+
+<thead>
+
+<tr>
+
+<th>Hari</th>
+
+<th>Jam Operasional</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Senin - Sabtu</td>
+
+<td>08.00 - 16.00 WIB</td>
+
+</tr>
+
+<tr>
+
+<td>Minggu & Hari Libur Nasional</td>
+
+<td>Tutup</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- =========================
+        PART 3 - FOOTER
+========================= -->
+
+<style>
+/* =========================
+        FOOTER
+========================= */
+
+.footer{
+    margin-top:80px;
+    background:linear-gradient(135deg,#1E3A8A,#2563EB);
+    color:white;
+    padding:60px 0 20px;
+}
+
+.footer h3,
+.footer h4{
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.footer p{
+    line-height:28px;
+    color:#E5E7EB;
+}
+
+.footer ul{
+    padding:0;
+    margin:0;
+}
+
+.footer ul li{
+    list-style:none;
+    margin-bottom:15px;
+}
+
+.footer ul li i{
+    color:#93C5FD;
+    margin-right:10px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer a:hover{
+    color:#BFDBFE;
+    padding-left:6px;
+}
+
+.footer hr{
+    border:1px solid rgba(255,255,255,.2);
+    margin:30px 0;
+}
+
+.footer-bottom{
+    text-align:center;
+    color:#DBEAFE;
+    font-size:15px;
+}
+
+{
+
+.footer{
+text-align:center;
+}
+
+.social-icon{
+margin-top:20px;
+}
+
+}
+</style>
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="row">
+
+<!-- Tentang -->
+
+<div class="col-lg-4 mb-4">
+
+<h3>Perpustakaan Potensi Utama</h3>
+
+<p>
+
+Perpustakaan Digital Universitas Potensi Utama menyediakan
+berbagai koleksi buku digital, jurnal ilmiah,
+skripsi, dan referensi akademik untuk mendukung
+proses belajar mengajar mahasiswa.
+
+</p>
+
+</div>
+
+<!-- Kontak -->
+
+<div class="col-lg-4 mb-4">
+
+<h4>Kontak</h4>
+
+<ul>
+
+<li>
+
+<i class="bi bi-geo-alt-fill"></i>
+
+Universitas Potensi Utama
+
+</li>
+
+<li>
+
+<i class="bi bi-envelope-fill"></i>
+
+library.upu@gmail.com
+
+</li>
+
+<li>
+
+<i class="bi bi-telephone-fill"></i>
+
+☎ (061) 6640525 ~
+0821-2401-8525
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Menu -->
+
+<div class="col-lg-4 mb-4">
+
+<h4>Menu Cepat</h4>
+
+<ul>
+
+<li><a href="Perpustakaan.html">Beranda</a></li>
+
+<li><a href="katalogbuku.html">Katalog Buku</a></li>
+
+<li><a href="peminjaman.html">Peminjaman</a></li>
+
+<li><a href="riwayat.html">Riwayat</a></li>
+
+<li><a href="faq.html">FAQ</a></li>
+
+<li><a href="kontak.html">Kontak</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+
+© 2026 Perpustakaan Digital UPU | Universitas Potensi Utama
+
+</div>
+
+</div>
+
+</footer>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+
+<div id="welcomeToast"
+class="toast"
+data-bs-delay="4000">
+
+<div class="toast-header">
+
+<strong class="me-auto">
+Perpustakaan
+</strong>
+
+<button
+type="button"
+class="btn-close"
+data-bs-dismiss="toast">
+</button>
+
+</div>
+
+<div class="toast-body">
+
+Selamat datang di Perpustakaan Universitas Potensi Utama.
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+window.onload=function(){
+
+const toast=new bootstrap.Toast(
+
+document.getElementById("welcomeToast")
+
+);
+
+toast.show();
+
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
